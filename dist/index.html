@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS test</title>
+	<link rel="stylesheet" type="text/css" href="css/style.main.css">
+</head>
+<body>
+	<!-- Template -->
+	<script type="text/html" id="test">
+		<form action="#" class="form__test" method="POST">
+			<h1>Programing test</h1>
+			<ol>
+				<% for (var i = 0; i < questions.length; i++) { %>
+					<li>
+						<h4><%= questions[i].title %></h4>
+						<% for (var j = 0; j < questions[i].answers.length; j++) { %>
+							<input type="radio" id="<%= questions[i].id[j] %>" name = "<%= questions[i].name %>"  value="<%= questions[i].id[j] %>">
+							<label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label><br>
+						<% }; %>
+					</li>
+				<% }; %>
+			</ol>
+			<button class="btn" id ="check">Check my resoult</button>
+		</form>	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 	<script type="text/javascript" src="js/script.main.js"></script>
+</body>
+
+</html>
