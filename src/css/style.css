@@ -53,8 +53,14 @@ label {
 	font-size: 20px;
 	font-weight: bold;
 }
-/* Окно */
 
+.title_result__green {
+	font-size: 20px;
+	font-weight: bold;
+	color: green;
+}
+
+/* Окно */
 #modal_form {
 	display: none;
 	position: fixed;
