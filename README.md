@@ -1,7 +1,7 @@
  ## Test JS
  
-+[Demo](https://victoriiaklubchuk.github.io/test/index.html)
-+
+[Demo](https://victoriiaklubchuk.github.io/test/dist/)
+
  It has:
  
  - [x] 3 questions and 3 answers(just one is correct)
